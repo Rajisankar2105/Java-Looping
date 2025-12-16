@@ -1,0 +1,12 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        StringBuilder num=new StringBuilder(sc.next());
+        char temp = num.charAt(0);
+        num.setCharAt(0,num.charAt(num.length()-1));
+        num.setCharAt(num.length()-1,temp);
+        System.out.println("Result:"+num);
+    }
+}
