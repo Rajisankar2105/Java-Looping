@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String num=sc.next();
+       String[] words={"Zero","one","two","three","four","five","six","seven","eight","nine"};
+       for(char c: num.toCharArray()){
+        System.out.print(words[c-'0']+" ");
+         }
+}
+}
+
+
+
+
