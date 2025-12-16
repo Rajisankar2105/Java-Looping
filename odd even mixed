@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        String numStr=String.valueOf(num);
+        boolean allEven=true,allOdd=true;
+        for(char c: numStr.toCharArray()){
+            int d=c-'0';
+            if(d%2==0)allOdd=false;
+            else allEven = false;
+        }
+        if(allEven) System.out.println("All digits are even.");
+        else if(allOdd) System.out.println("All digits are odd.");
+        else System.out.println("Digits are mixed.");
+         }
+}
