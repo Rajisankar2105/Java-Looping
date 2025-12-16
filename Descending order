@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        String num = sc.next();
+        boolean isDescending = true;
+        for (int i = 0; i < num.length() - 1; i++) {
+            if (num.charAt(i) > num.charAt(i + 1)) {
+                isDescending = false;
+                break;
+            }
+        }
+        System.out.println(isDescending ? "Digits are in descending order." : "Digits are not in descending order.");
+    }
+}
