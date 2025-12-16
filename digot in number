@@ -1,0 +1,15 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String srgs[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter number:");
+        int num=sc.nextInt();
+        System.out.print("Enter digit:");
+        int digit=sc.nextInt();
+        String numStr=String.valueOf(num);
+        if(numStr.contains(String.valueOf(digit)))
+        System.out.println("Digit exists in the number.");
+        else
+        System.out.println("Digit does not exists in the number.");
+    }
+}
