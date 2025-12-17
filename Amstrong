@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number:");
+        int num=sc.nextInt();
+int temp=num,Sum=0,Mul=1;
+while(num>0){
+    int a=num%10;
+    Mul=a*a*a;
+Sum+=Mul;
+num/=10;
+}
+if(temp==Sum)
+        System.out.println("Amstrong");
+        else
+        System.out.println("Not");
+    }
+}
