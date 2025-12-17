@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number:");
+        int n=sc.nextInt(),sum=0;
+  int sq=n*n;
+  String numStr=String.valueOf(n);
+  String sqStr=String.valueOf(sq);
+             boolean isAutomorphic=sqStr.endsWith(numStr);
+             System.out.println(isAutomorphic?n+"is a isAutomorphic": "Not");
+            
+         }
+          }
