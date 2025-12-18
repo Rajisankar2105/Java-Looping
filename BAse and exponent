@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter base(M) and exponent(N)");
+   int M= sc.nextInt();
+   int N=sc.nextInt(),result=1;
+       for(int i=0;i<N;i++)result *=M;
+
+        System.out.println(M+"^"+N+"="+result);
+    }
+}
