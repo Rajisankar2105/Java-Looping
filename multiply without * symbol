@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter two number: ");
+   int a= sc.nextInt();
+   int b=sc.nextInt(),result=0;
+       for(int i=0;i<Math.abs(b);i++)result+=a;
+       if(b<0)result=-result;
+
+        System.out.println("Product:"+result);
+    }
+}
